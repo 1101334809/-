@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+	"pages/user/user",
+	"pages/Collection/Collection",
+	"pages/Shopping/Shopping",
+	"pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐享购物",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+	"color": "#333",
+	"selectedColor": "#F65959",
+	"borderStyle": "white",
+	"backgroundColor": "#ffffff",
+	"list": [
+		{
+			"pagePath": "pages/index/index",
+			"iconPath": "imgs/home.png",
+			"selectedIconPath": "imgs/home1.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/logs/logs",
+			"iconPath": "imgs/fl.png",
+			"selectedIconPath": "imgs/fz1.png",
+			"text": "分类"
+		},
+		{
+			"pagePath": "pages/Collection/Collection",
+			"iconPath": "imgs/sc.png",
+			"selectedIconPath": "imgs/sc1.png",
+			"text": "推荐"
+		},
+		{
+			"pagePath": "pages/Shopping/Shopping",
+			"iconPath": "imgs/gwc.png",
+			"selectedIconPath": "imgs/gwc1.png",
+			"text": "购物车"
+		},
+		{
+			"pagePath": "pages/user/user",
+			"iconPath": "imgs/yh.png",
+			"selectedIconPath": "imgs/yh1.png",
+			"text": "我的"
+		}
+	]
+},
+"debug": true
+}

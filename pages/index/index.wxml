@@ -1,0 +1,30 @@
+<view class="Ltop">
+	<view class="Lone Qwidth">
+		<view class="Ltp">
+			<view class="iconfont icon-fuzhi Lsize" bindtap="TZlogs"></view>
+			<span class="Lfont">分类</span>
+		</view>
+		<view class="Lipt">
+			<image class="iconfont icon-search Llest" bindtap="TZsearch"></image>
+			<span class='Llests'>华为手机</span>
+		</view>
+	</view>
+</view>
+<view class="Middle">
+	<view class="Mtop">
+		<view class="Mone">
+			<text>热搜</text>
+			<view class="Mlest">
+				<p class='Muai'>{{Keyword[0]}}</p>
+				<p class='Muai'>{{Keyword[1]}}</p>
+				<p class='Muai'>{{Keyword[2]}}</p>
+				<p class='Muai'>{{Keyword[3]}}</p>
+			</view>
+		</view>
+			<swiper class="Mlbt" indicator-dots="true" autoplay="true" interval="2000" circular='true'>
+				<swiper-item><image src="../../imgs/lbt1.jpg"></image></swiper-item>
+				<swiper-item><image src="../../imgs/lbt2.jpg"></image></swiper-item>
+				<swiper-item><image src="../../imgs/lbt3.jpg"></image></swiper-item>
+			</swiper>
+	</view>
+</view>
