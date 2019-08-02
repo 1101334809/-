@@ -9,6 +9,10 @@ Page({
 	onLoad: function () {
 		
 	},
+	//测试
+	hehe:function(){
+		console.log('hehe')
+	},
 	TZlogs:function(){
 		wx.switchTab({
 			url: '../logs/logs'
