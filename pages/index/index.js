@@ -4,10 +4,43 @@ const app = getApp()
 
 Page({
 	data: {
-		Keyword:['华为手机','小米手机','oppo手机','黑鲨手机']
+		Keyword:['华为手机','小米手机','oppo手机','黑鲨手机'],
+		subtitle: [],
+		slider: [
+			{ picUrl: '../../imgs/lbt1.jpg' },
+			{ picUrl: '../../imgs/lbt2.jpg' },
+			{ picUrl: '../../imgs/lbt3.jpg' },
+		],
+		swiperCurrent: 0,
+		swiperTow:[{},{}],
+		swiperCurrent2:0,
 	},
 	onLoad: function () {
-		
+		let pas = [
+				{img: '../../imgs/ej.jpg', name: '这是测试'},
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+				{ img: '../../imgs/ej.jpg', name: '这是测试' },
+			];
+			this.setData({
+				subtitle:pas,
+			})
+	},
+	swiperChange2:function(e){
+		this.setData({
+			swiperCurrent2: e.detail.current
+		})
+	},
+	swiperChange: function (e) {
+		this.setData({
+			swiperCurrent: e.detail.current
+		})
 	},
 	//测试
 	hehe:function(){
@@ -19,8 +52,9 @@ Page({
 		})
 	},
 	TZsearch:function(){
+		console.log(2)
 		wx.switchTab({
-			url: '../search/search'
+			url: '../Collection/Collection'
 		})
 	},
 	onPullDownRefresh: function () {

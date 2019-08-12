@@ -4,8 +4,8 @@
 			<view class="iconfont icon-fuzhi Lsize" bindtap="TZlogs"></view>
 			<span class="Lfont">分类</span>
 		</view>
-		<view class="Lipt">
-			<image class="iconfont icon-search Llest" bindtap="TZsearch"></image>
+		<view class="Lipt" bindtap="TZsearch">
+			<image class="iconfont icon-search Llest" ></image>
 			<span class='Llests'>华为手机</span>
 		</view>
 	</view>
@@ -21,10 +21,43 @@
 				<p class='Muai'>{{Keyword[3]}}</p>
 			</view>
 		</view>
-			<swiper class="Mlbt" indicator-dots="true" autoplay="true" interval="2000" circular='true'>
-				<swiper-item><image src="../../imgs/lbt1.jpg"></image></swiper-item>
-				<swiper-item><image src="../../imgs/lbt2.jpg"></image></swiper-item>
-				<swiper-item><image src="../../imgs/lbt3.jpg"></image></swiper-item>
+		<view>
+			<swiper class="Mlbt" current="{{swiperCurrent}}" bindchange="swiperChange">
+				<block wx:for="{{slider}}" wx:key="unique">
+					<swiper-item>
+						<image src="{{item.picUrl}}"></image>
+					</swiper-item>
+				</block>
 			</swiper>
+			<view class="dots">
+				<block wx:for="{{slider}}" wx:key="unique">
+					<view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+				</block>
+			</view>
+		</view>
+		<swiper current="{{swiperCurrent2}}" bindchange="swiperChange2">
+			<swiper-item wx:for="{{swiperTow}}" wx:key="index"> 
+				<view class="Kuer" wx:for="{{subtitle}}" wx:key="index">
+					<view class="elements">
+						<image src="{{item.img}}"></image>
+					</view>
+						<view >{{item.name}}</view>
+					</view>
+			</swiper-item>
+		</swiper>
+		<view class="dots2">
+			<block wx:for="{{swiperTow}}" wx:key="unique">
+				<view class="dot{{index == swiperCurrent2 ? ' active' : ''}}"></view>
+			</block>
+		</view>
+		<view class="Tom" >
+			<view class="Tseleft">
+				
+			</view>
+		</view>
 	</view>
 </view>
+
+
+
+
