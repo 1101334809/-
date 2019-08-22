@@ -1,8 +1,84 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+/* pages/logs/logs.wxss */
+.topc{
+	height: 9vh;
+	border-top: 2rpx solid #d1d1d1;
+	border-bottom: 2rpx solid #d1d1d1;
+	background: #fff;
+	/* #F7F7F7 */
 }
-.log-item {
-  margin: 10rpx;
+.search{
+	width: 90%;
+	height: 70%;
+	margin-left: 5%;
+	background: #F0F0F0;
+	margin: 0 auto; /*水平居中*/
+    position: relative;
+    top: 50%; /*偏移*/
+	transform: translateY(-50%);
+	border-radius: 50px;
+	text-align: center;
+	color: #999999;
+	font-size: 26rpx;
+	line-height: 60rpx;
+}
+.single{
+	width: 100%;
+}
+.Sleft{
+	width: 25%;
+	height:90vh;
+	float: left;
+}
+.contentont{
+	width: 100%;
+	height: 90rpx;
+	text-align: center;
+	font-size: 26rpx;
+}
+.center{
+	position: relative;
+    top: 50%; /*偏移*/
+	transform: translateY(-50%);
+}
+.white{
+	background: #fff;
+	color: #E31E18;
+}
+.Sright{
+	width: 70%;
+	height:90vh;
+	float: left;
+	background: #fff;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+.first{
+	width: 100%;
+	height: 20vh;
+	margin-bottom: 8%;
+}
+.erang{
+	font-weight: 600;
+	margin-bottom: 20rpx;
+}
+.tsoc{
+	width: 100%;
+	height: 20vh;
+	background: #F0F0F0;
+	margin-bottom: 20rpx;
+}
+.gap{
+	width: 100%;
+	height: 100%;
+}
+.numbers{
+	width: 30%;
+	height: 190rpx;
+	text-align: center;
+	margin: 6rpx;
+	float: left;
+}
+.tpnes{
+	width: 100%;
+	height: 75%;
 }

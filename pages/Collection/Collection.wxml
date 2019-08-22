@@ -1,2 +1,30 @@
-<!--pages/Collection/Collection.wxml-->
-<text>pages/Collection/Collection.wxml</text>
+<import src="../template/template.wxml"/>
+
+<view class="navbar" wx:if="{{condition == 1}}">
+	<view class="single">
+		<block  wx:for="{{singleData}}" wx:key="index">
+			<view class='{{msit==index?"lser internal":"internal"}}' data-index="{{index}}" bindtap="changed"><text >{{item.name}}</text></view>
+		</block>
+	</view>
+	<view class="buttonId">
+		<view class="iconfont icon-xiajiantou1 TBsize" bindtap="doneOne"></view>
+	</view>
+</view>
+
+<block wx:if="{{condition == 2}}">
+	<view class="navbar blst">
+		<view class="arrow">为你推荐以下分类</view>
+		<view class="buttonRight ">
+			<view class="iconfont icon-shangjiantou1 TBsize" bindtap="doneTow"></view>
+		</view>
+	</view>
+	<view class="gist">
+		<block wx:for="{{singleData}}" wx:key="index">
+			<view class='{{msit==index?"cols semicircle":"semicircle"}}' data-index="{{index}}" bindtap="changed">
+				<text>{{item.name}}</text> 
+			</view>
+		</block>
+	</view>
+</block>
+
+<template is="TemplateData" data="{{tousData}}"></template>

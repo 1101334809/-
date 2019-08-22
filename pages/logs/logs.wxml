@@ -1,3 +1,30 @@
-<view>
-	<view>这是logs页</view>
+<view class="topc">
+	 <view class="search">
+	 	<view> <text class="iconfont icon-search"></text> 搜索京东商品</view>
+	 </view>
+</view>
+<view class="single">
+	<scroll-view class="Sleft" scroll-y="true">
+		<block  wx:for="{{Oinfo}}" wx:key="index">
+			<view class='contentont {{digits==index  ? "white" : ""}}' data-index="{{index}}" bindtap="networking">
+				<view class= 'center' >{{item.name}}</view>
+			</view>
+		</block>
+	</scroll-view>
+	<scroll-view class="Sright" scroll-y="true">
+		<image class="first" src="../../imgs/lbt1.jpg"></image>
+		<view class="erang">专场推荐</view>
+		<view class="tsoc">
+		</view>
+		<view class="erang">专场推荐</view>
+
+		<view class="gap">
+			<block wx:for="{{wsadx}}" wx:key="index">
+				<view class="numbers">
+					<image class="tpnes" src="{{item.url}}"></image>
+					<text>{{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</scroll-view>
 </view>

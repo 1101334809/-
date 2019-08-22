@@ -22,7 +22,7 @@
 			</view>
 		</view>
 		<view>
-			<swiper class="Mlbt" current="{{swiperCurrent}}" bindchange="swiperChange">
+			<swiper class="Mlbt" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
 				<block wx:for="{{slider}}" wx:key="unique">
 					<swiper-item>
 						<image src="{{item.picUrl}}"></image>
@@ -35,7 +35,7 @@
 				</block>
 			</view>
 		</view>
-		<swiper current="{{swiperCurrent2}}" bindchange="swiperChange2">
+		<swiper circular="true" current="{{swiperCurrent2}}" bindchange="swiperChange2">
 			<swiper-item wx:for="{{swiperTow}}" wx:key="index"> 
 				<view class="Kuer" wx:for="{{subtitle}}" wx:key="index">
 					<view class="elements">

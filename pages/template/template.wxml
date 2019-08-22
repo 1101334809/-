@@ -1,0 +1,18 @@
+<template name="TemplateData">
+	<view class="Oneths">
+		<view class="all">
+				<view class="box" wx:for="{{tousData}}" wx:key="index" wx:for-item="item">
+					<image src="{{item.Usetdata}}"></image>
+					<view class="fimng">
+						<text class="timng">{{item.Introduced}}</text>
+					</view>
+					<view class="fimng">
+						<text style="color:red;font-weight: 600;font-size: 25rpx;">￥</text>
+						<text style="color:red;font-weight: 600;font-size: 35rpx;">{{item.amount}}</text>
+					</view>
+				</view>
+		</view>
+	</view>
+</template>
+
+	

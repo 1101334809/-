@@ -1,9 +1,10 @@
 {
 	"pages": [
 		"pages/index/index",
-		"pages/logs/logs",
-		"pages/user/user",
 		"pages/Collection/Collection",
+		"pages/logs/logs",
+		"pages/template/template",
+		"pages/user/user",
 		"pages/Shopping/Shopping",
 		"pages/search/search"
 	],

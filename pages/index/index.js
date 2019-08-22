@@ -67,4 +67,7 @@ Page({
 			Keyword: ['锤子手机', 'E+手机', '三星手机', '游戏手机']
 		})
 	},
+	onPageScroll: function (e) {
+		console.log(e);//{scrollTop:99}
+	}
 })

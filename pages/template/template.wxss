@@ -1,0 +1,37 @@
+/* pages/template/template.wxss */
+.all{
+	width:100%;
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+	column-gap:15rpx;
+}
+.box{
+	margin-bottom:15rpx;	
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+	background: #ffffff;
+}
+.box image{
+	width: 100%;
+	height: 170px;
+}
+.fimng{
+	width: 90%;
+	margin-left: 5%;
+}
+.timng{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.Oneths{
+	width: 92%;
+	margin-left: 4%;
+	margin-top: 135rpx;
+	position: absolute;
+}

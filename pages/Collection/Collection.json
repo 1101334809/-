@@ -1,5 +1,4 @@
 {
-	"component": true,
-	"usingComponents": {},
-	"navigationBarTitleText": "推荐"
+  "usingComponents": {},
+  "navigationBarTitleText": "推荐"
 }
